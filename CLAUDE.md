@@ -93,4 +93,11 @@ Vervangt de huidige WordPress-site op https://coworkingcompeta.com/.
 - [ ] Nieuwe foto's van eigenaar verwerken (`images/nieuw/`)
 - [x] Pagina's "Wie huren hier een werkplek" en "Contact"
 - [x] Engelse, Spaanse en Duitse versies
-- [ ] Uploaden naar Vimexx
+- [x] Online via GitHub Pages (25-09-2026): DNS bij Vimexx (DirectAdmin) omgezet — A @ naar 185.199.108-111.153, CNAME www naar itandleisure.github.io, oude A/AAAA/TLSA voor @ en www verwijderd
+- [ ] "Enforce HTTPS" aanzetten in repo → Settings → Pages zodra het certificaat klaar is
+- [ ] Contactformulier testen op de live site + FormSubmit-activatiemail bevestigen
+- [ ] Hostingpakket Vimexx omlaag naar alleen mail (pas als alles goed werkt)
+
+## Online zetten (vanaf nu)
+- Wijzigingen opslaan en versturen: `git add -A`, `git commit -m "..."`, `git push`. GitHub Pages zet het binnen ~1 minuut live.
+- `tools/maak-upload.py` is alleen nog nodig voor de oude FTP-manier.
