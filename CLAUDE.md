@@ -99,5 +99,6 @@ Vervangt de huidige WordPress-site op https://coworkingcompeta.com/.
 - [ ] Hostingpakket Vimexx omlaag naar alleen mail (pas als alles goed werkt)
 
 ## Online zetten (vanaf nu)
+- **Nooit zelf pushen.** Wijzigingen eerst lokaal maken en laten zien; pas `git push` doen als de eigenaar expliciet zegt dat het online mag ("zet online", "push maar").
 - Wijzigingen opslaan en versturen: `git add -A`, `git commit -m "..."`, `git push`. GitHub Pages zet het binnen ~1 minuut live.
 - `tools/maak-upload.py` is alleen nog nodig voor de oude FTP-manier.
