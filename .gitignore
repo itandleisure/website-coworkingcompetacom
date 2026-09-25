@@ -1,0 +1,8 @@
+# Niet naar GitHub sturen
+images/origineel/
+images/nieuw/
+__pycache__/
+*.pyc
+.claude/settings.local.json
+desktop.ini
+Thumbs.db

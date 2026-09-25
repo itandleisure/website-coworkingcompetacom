@@ -1,0 +1,6 @@
+# Instellingen voor GitHub Pages
+# Deze bestanden en mappen staan wel in GitHub, maar komen NIET online op de website.
+exclude:
+  - CLAUDE.md
+  - tools/
+  - logo-opties.html
