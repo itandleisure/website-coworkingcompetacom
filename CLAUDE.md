@@ -55,6 +55,10 @@ Vervangt de huidige WordPress-site op https://coworkingcompeta.com/.
 - Oud: **Vimexx**. Uploaden gaat via FTP of het bestandsbeheer in het Vimexx-controlpanel.
 - Het contactformulier gebruikt **FormSubmit** (`https://formsubmit.co/info@coworkingcompeta.com`), omdat statische HTML zelf geen e-mail kan versturen. Na verzenden gaat de bezoeker naar `/bedankt/` (EN/ES: eigen bedankpagina maken).
 - De eerste keer dat het formulier op de live site wordt gebruikt, stuurt FormSubmit een activatiemail naar info@; die link moet de eigenaar één keer aanklikken.
+- **Nieuw: Google Sheets-opslag.** `js/formulier.js` (op de 8 pagina's met een formulier) stuurt het formulier naar een Google Apps Script (`tools/google-formulier/Code.gs`, staat in een Google Sheet van de eigenaar). Dat slaat elk bericht op in tabblad "Berichten", mailt info@, en verwijdert berichten ouder dan 12 maanden (nachtelijke trigger). Faalt Google, dan valt het formulier terug op FormSubmit.
+  - De web-app-URL (eindigt op `/exec`) staat in `GOOGLE_URL` bovenin `js/formulier.js`. Leeg = alleen FormSubmit.
+  - Script gewijzigd? In Apps Script: Implementeren → Implementaties beheren → bewerken → Nieuwe versie (dan blijft de URL gelijk).
+  - Privacyverklaring (4 talen) noemt Google-opslag + 12 maanden.
 
 ## Uploaden / livegang
 - `python tools/maak-upload.py` maakt `../coworking-competa-UPLOAD/` en `../coworking-competa-upload.zip` met alleen de bestanden die online horen (zonder CLAUDE.md, tools, images/origineel, images/nieuw, logo-opties.html).

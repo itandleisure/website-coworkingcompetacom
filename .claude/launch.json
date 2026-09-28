@@ -4,7 +4,7 @@
     {
       "name": "website",
       "runtimeExecutable": "python",
-      "runtimeArgs": ["-m", "http.server", "8080", "--directory", "G:/Mijn Drive/Claude Projecten Folder/Claude Code/coworking-competa-website"],
+      "runtimeArgs": ["-m", "http.server", "8080", "--bind", "127.0.0.1", "--directory", "C:/Websites/coworking-competa-website"],
       "port": 8080
     }
   ]
