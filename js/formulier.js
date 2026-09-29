@@ -4,7 +4,7 @@
      FormSubmit (de action in de HTML). Zo gaat er nooit een aanvraag verloren. */
 (function () {
   // Web-app-URL van het Google Apps Script (eindigt op /exec). Leeg = alleen FormSubmit.
-  var GOOGLE_URL = 'https://script.google.com/macros/s/AKfycbzt9w8HchDBZYWda5NxI5vueK_dus7dAaWKbFtk25P7PlKYszyO4zdrLCLhH-QRQuNjAA/exec';
+  var GOOGLE_URL = 'https://script.google.com/macros/s/AKfycbxrJJvGmsw68OKECxXdK_Cvl9mLSdCjjqjpL3rpuZ_qm07zMS-_RdT0CatXj0jYYhVIPA/exec';
 
   if (!GOOGLE_URL || !window.fetch || !window.URLSearchParams) return;
 
